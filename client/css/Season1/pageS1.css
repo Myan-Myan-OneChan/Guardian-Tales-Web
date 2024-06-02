@@ -1,55 +1,83 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f3f3f3;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 .slider {
-    position: relative;
-    width: 80%;
-    max-width: 800px;
-    overflow: hidden;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    background-color: #fff;
+  position: relative;
+  width: 90%;
+  height: 500px;
+  max-width: 1500px;
+  /* background-color: red; */
+  /* max-width: 5000px; */
+  overflow: hidden;
+  /* border: 2px solid #ddd;
+  border-radius: 10px; */
+  margin-left: 75px;
 }
-
 .worlds {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 200%; /* 100% for each world element, adjust based on the number of elements */
+  display: inline-flex;
+  /* background-color: green; */
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
 }
-
 .world {
-    min-width: 100%;
-    box-sizing: border-box;
+  min-width: 100%;
+  box-sizing: border-box;
+  /* background-color: pink; */
+  /* height: 100%; */
+}
+.kantenburyForestWorld {
+  /* max-width: 1290px; */
+  width: 100%;
+  margin-top: 60px;
+  background-color: blue;
+}
+.kantenburyForestTitle {
+  width: 100%;
+  border-bottom: 2px solid black;
+  padding: 5px;
+  /* border-radius: 20px; */
+  display: flex;
+  justify-content: center;
+  /* margin-left: 25px; */
+  color: black;
+  margin-right: 25px;
+}
+.kantenburyForestTitle:hover {
+  background-color: black;
+  color: white;
 }
 
+.world a {
+  text-decoration: none;
+}
+
+.world img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
 button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-    user-select: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: wheat;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  user-select: none;
 }
-
 button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
-
 .prev {
-    left: 10px;
+  left: 10px;
 }
 
 .next {
-    right: 10px;
+  right: 10px;
 }
